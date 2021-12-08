@@ -1,7 +1,7 @@
 import importlib.resources as pkg_resources
-from typing import Any, Callable
 import requests
 from functools import cache, total_ordering
+from typing import Any, Callable
 
 import adventofcode2021.data
 
@@ -35,10 +35,10 @@ class DayTemplate:
     def data(self) -> list:
         return [self.process(i) for i in self._data]
 
-    def part_1(self):
+    def part_1(self) -> Any:
         return NotImplemented
 
-    def part_2(self):
+    def part_2(self) -> Any:
         return NotImplemented
 
     def __lt__(self, other) -> bool:

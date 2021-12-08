@@ -27,7 +27,7 @@ def main():
     if i not in days:
         print("Invalid day.")
     else:
-        print(days[i])
+        print(days[i].data)
 
 
 if __name__ == "__main__":
