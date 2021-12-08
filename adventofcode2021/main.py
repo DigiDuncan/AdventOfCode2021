@@ -1,5 +1,5 @@
-import pkgutil
 import importlib
+import pkgutil
 import re
 
 import adventofcode2021.days as day_modules
@@ -27,7 +27,7 @@ def main():
     if i not in days:
         print("Invalid day.")
     else:
-        print(days[i].data)
+        print(days[i])
 
 
 if __name__ == "__main__":
