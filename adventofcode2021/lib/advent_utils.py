@@ -28,6 +28,7 @@ class DayTemplate:
         is a list of strings and that might not be what we want.
         """
         self.day = day
+        self.link = f"https://adventofcode.com/2021/day/{self.day}"
         self._data = get_input_data(self.day)
         self.process = process
 
