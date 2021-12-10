@@ -6,6 +6,8 @@ class Day(DayTemplate):
         super().__init__(1, int)
 
     def part_1(self):
+        super().part_1()
+
         last_measurement = None
         increases = 0
         for measurement in self.data:
@@ -22,6 +24,8 @@ class Day(DayTemplate):
         return increases
 
     def part_2(self):
+        super().part_2()
+
         window = [None, None, None]
         increases = 0
         for measurement in self.data:

@@ -9,6 +9,8 @@ class Day(DayTemplate):
         super().__init__(2, a)
 
     def part_1(self):
+        super().part_1()
+
         depth = 0
         horiz = 0
         for direction, amount in self.data:
@@ -18,9 +20,13 @@ class Day(DayTemplate):
                 depth -= amount
             elif direction == "down":
                 depth += amount
+
+        print(f"Depth: {depth}, Horiz {horiz}")
         return depth * horiz
 
     def part_2(self):
+        super().part_2()
+
         depth = 0
         horiz = 0
         aim = 0
@@ -33,4 +39,6 @@ class Day(DayTemplate):
                 aim -= amount
             elif direction == "down":
                 aim += amount
+
+        print(f"Depth: {depth}, Horiz {horiz}")
         return depth * horiz

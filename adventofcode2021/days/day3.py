@@ -6,6 +6,8 @@ class Day(DayTemplate):
         super().__init__(3)
 
     def part_1(self):
+        super().part_1()
+
         zero_counts = [0] * 12
         one_counts = [0] * 12
         # Get the values we need
@@ -24,7 +26,10 @@ class Day(DayTemplate):
         epsilon_string = "".join([str(i) for i in epsilon_list])
         gamma = int(gamma_string, 2)
         epsilon = int(epsilon_string, 2)
+
+        print(f"γ: {gamma_string} | {gamma}")
+        print(f"ε: {epsilon_string} | {epsilon}")
         return gamma * epsilon
 
     def part_2(self):
-        pass
+        super().part_2()

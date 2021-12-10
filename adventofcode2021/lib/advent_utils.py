@@ -37,10 +37,10 @@ class DayTemplate:
         return [self.process(i) for i in self._data]
 
     def part_1(self) -> Any:
-        return NotImplemented
+        print("Calculating part 1...")
 
     def part_2(self) -> Any:
-        return NotImplemented
+        print("Calculating part 2...")
 
     def __lt__(self, other) -> bool:
         self.day < other.day
