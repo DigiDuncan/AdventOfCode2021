@@ -30,7 +30,7 @@ class DayTemplate:
         self.day = day
         self.link = f"https://adventofcode.com/2021/day/{self.day}"
         self._data = get_input_data(self.day)
-        self.process = process
+        self.process = process if process is not None else lambda x: x
 
     @property
     def data(self) -> list:
@@ -50,3 +50,7 @@ class DayTemplate:
 
     def __str__(self) -> str:
         return f"Day {self.day} | {self.part_1()} | {self.part_2()}"
+
+
+class ThisShouldNeverHappenExeception(Exception):
+    pass
